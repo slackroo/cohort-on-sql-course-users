@@ -254,14 +254,3 @@ ORDER BY registrations.my_date
 
 
 
-(;select user_id, count(*) from super_tree
-group by user_id
-having count(*) > 1
-order by user_id
-;
-
-
-select user_id, count(distinct(user_id)) from super_tree
-where my_date = '2020-10-09'
-group by user_id
-;
